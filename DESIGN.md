@@ -18,8 +18,34 @@ Decisions taken while designing the site. Read this before changing anything.
   **The view → The way → The instruments → The origin → The dialogue**
   (vision, mission, products, company, contact).
 - Home = one screen, no scrolling: one thesis sentence + the line with the five stations.
-- Inner pages: the line becomes the navigation at the top (current station filled);
-  each page ends with the next station; the line ends at The dialogue.
+- Inner pages: the line becomes the navigation at the top, on the same five columns as the
+  home (so each station rises straight up). Home is reached from the logo and from the
+  "Home" link in the footer, next to Imprint and Privacy. The current station is a larger
+  lapis dot with a halo and a lapis label; the path ahead of it is paler. The line ends at
+  The dialogue.
+- No numbering anywhere (01–05, A–D, 01 / 08): the line already says "sequence".
+- Inside The instruments a second row under the trail lists All · the four instruments
+  (current one underlined, as on the home).
+
+## Movement between pages
+
+The transition tells the structure: the line of the home rises and becomes the trail, each
+station name flies to its place; going Home it comes back down. Between inner pages the
+trail stays still: the lapis line (the path walked) grows or shrinks to the new station and
+the position point slides along it — the line connects, it never reappears. An instrument's name grows into the title
+of its page (from the home or from the overview) and shrinks back. Content leaves quickly
+and arrives after the line has settled — nothing overlaps for long.
+One duration (0.72s) and one curve for everything that moves; content leaves in the first
+third and arrives in the rest, so two pages are never superimposed.
+Built with cross-document View Transitions (CSS only); browsers without them simply change
+page. The marble background is a pre-rendered image (assets/img/marble.jpg): a live SVG
+filter made every page change stutter. The home intro (line drawn, stations appearing) plays only on the first visit of a
+session; the lexicon keeps its word across pages.
+- The top line is the only navigation: no kicker repeating the station name above the title,
+  no previous/next block at the bottom. Nothing is said twice on the same screen.
+- Inner pages fit one screen on desktop: title, lead and text share the same left edge
+  (title on top, lead left, text right). Copy must stay short — about two paragraphs per
+  station; longer text simply scrolls.
 - Avoid: slide/PowerPoint layouts (one statement per screen with prev/next),
   bullet lists that read like shopping lists, scattered/blurred layouts (they say chaos),
   decorative charts, stock imagery, AI-generated imagery.
