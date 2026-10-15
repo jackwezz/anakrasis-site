@@ -41,7 +41,7 @@ Proportions on a typical screen: ~78% field, ~15% ink, ~6% lapis, ~1% cinabro.
 
 - **Instrument Sans** only (normal width for reading, width 75 for labels).
 - **GFS Didot** only for Greek words.
-- Self-host the fonts before going public (GDPR, see README).
+- Fonts are self-hosted (GDPR, see README).
 
 ## Signature
 
@@ -66,4 +66,4 @@ Current words are placeholders — to be replaced with the owner's campaign word
 - Final copy for every page (owner).
 - Campaign words for the lexicon.
 - Contact email and form service (`assets/js/site.js`).
-- Self-hosted fonts; Imprint and Privacy content; custom domain.
+- Imprint and Privacy content; custom domain.

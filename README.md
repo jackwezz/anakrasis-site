@@ -73,16 +73,10 @@ The site is static, so the form needs a place to send the data:
 
 ## Fonts & GDPR
 
-The pages currently load Instrument Sans and GFS Didot from Google Fonts. In Germany, loading
-Google Fonts from Google's servers without consent has been judged a GDPR violation
-(LG München I, 2022). Before the site goes public:
-
-1. Download the fonts (fonts.google.com → *Instrument Sans* and *GFS Didot* → Download,
-   or from fontsource.org) and convert/obtain them as `.woff2`.
-2. Save them in `assets/fonts/` with the names listed in `assets/fonts/README.txt`.
-3. In `assets/css/site.css`, uncomment the `@font-face` block at the top.
-4. Delete the three Google Fonts lines in the `<head>` of every page
-   (they are marked with a comment).
+The fonts (Instrument Sans, GFS Didot) are **self-hosted** in `assets/fonts/` and declared at
+the top of `assets/css/site.css`, so no page loads anything from Google Fonts (in Germany,
+loading Google Fonts from Google's servers without consent has been judged a GDPR violation,
+LG München I, 2022). Do not add Google Fonts `<link>` tags back. See `assets/fonts/README.txt`.
 
 ## Legal pages
 

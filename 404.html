@@ -20,7 +20,9 @@
 <main>
   <span class="lab">404</span>
   <h1>Page not found.</h1>
-  <div class="line"><i></i><a href="/">Back to the beginning →</a></div>
+  <div class="line"><i></i><a href="/" id="home">Back to the beginning →</a></div>
+  <script>/* on <user>.github.io/<repo>/ the home is the first path segment */
+    if (location.hostname.endsWith(".github.io")) document.getElementById("home").href = "/" + location.pathname.split("/")[1] + "/";</script>
 </main>
 </body>
 </html>
