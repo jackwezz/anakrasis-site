@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ANAKRASIS — site script
+   ANAKRISIS — site script
    Edit the CONFIG and LEXICON below; nothing else needs to change.
    ========================================================================== */
 (function () {
@@ -8,7 +8,7 @@
   /* ---------- CONFIG ---------- */
   const CONFIG = {
     // Where demo requests are sent when no form service is configured.
-    contactEmail: "hello@anakrasis.com",   // TODO: replace with the real address
+    contactEmail: "hello@anakrisis.eu",   // TODO: replace with the real address
     // Optional form service (e.g. Formspree: "https://formspree.io/f/xxxxxxx").
     // Leave empty to fall back to the visitor's email client (mailto).
     formEndpoint: "",
@@ -18,7 +18,7 @@
      One word, one short explanation (max two lines).
      Placeholder entries: replace with the campaign words.            */
   const LEXICON = [
-    ["ἀνάκρασις", "anákrasis", "A mixing together: separate elements blended into one whole."],
+    ["ἀνάκρισις", "anákrisis", "In Athens, the hearing before a trial: claims and evidence examined first."],
     ["χάος", "cháos", "The yawning gap that, in Hesiod, came into being first of all."],
     ["κόσμος", "kósmos", "Order, arrangement, also adornment. Later: the universe seen as an ordered whole."],
     ["κρίσις", "krísis", "From krínein, to separate and to judge: decision; in medicine, the turning point."],

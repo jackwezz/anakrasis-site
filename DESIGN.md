@@ -1,10 +1,10 @@
-# Anakrasis — design notes
+# Anakrisis — design notes
 
 Decisions taken while designing the site. Read this before changing anything.
 
 ## Positioning
 
-- Anakrasis is a data-services company with several applications ("instruments").
+- Anakrisis is a data-services company with several applications ("instruments").
 - Mission (owner's words, to be written as final copy by the owner): guide people to make
   decisions by creating an interpretive layer that turns data into usable information —
   *a reading lens on digital disorder*.

@@ -1,4 +1,4 @@
-# Anakrasis — website
+# Anakrisis — website
 
 Static website (plain HTML, CSS and a little JavaScript). No build step: what is in this
 repository is exactly what GitHub Pages publishes.
@@ -21,30 +21,30 @@ assets/img/                   favicon, portrait, social preview image
 assets/fonts/                 Self-hosted fonts (see below)
 ```
 
-Every page is a folder with an `index.html`, so URLs look like `anakrasis.com/the-view/`.
+Every page is a folder with an `index.html`, so URLs look like `anakrisis.eu/the-view/`.
 
 ## Publish on GitHub Pages
 
-1. Create a new **public** repository on github.com (e.g. `anakrasis-site`).
+1. Create a new **public** repository on github.com (e.g. `anakrisis-site`).
    GitHub Pages on a free account requires a public repository.
 2. On the repository page: **Add file → Upload files**, drag in **all the contents** of this
    folder (not the folder itself), then **Commit changes**. The hidden `.nojekyll` file is
    optional: if your computer hides it, the site works anyway.
 3. **Settings → Pages → Build and deployment**: Source *Deploy from a branch*,
    Branch `main`, folder `/ (root)` → **Save**.
-4. After a minute or two the site is online at `https://<your-username>.github.io/anakrasis-site/`.
+4. After a minute or two the site is online at `https://<your-username>.github.io/anakrisis-site/`.
 
 ## Custom domain
 
 1. Buy the domain at a registrar.
-2. In the repository: **Settings → Pages → Custom domain**, enter e.g. `www.anakrasis.com`
+2. In the repository: **Settings → Pages → Custom domain**, enter e.g. `www.anakrisis.eu`
    and save (GitHub creates a `CNAME` file in the repository).
 3. At the registrar, add the DNS records:
    - `www` → `CNAME` → `<your-username>.github.io`
-   - for the bare domain `anakrasis.com`, four `A` records:
+   - for the bare domain `anakrisis.eu`, four `A` records:
      `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
 4. When the certificate is ready, tick **Enforce HTTPS**.
-5. In every page the social-preview tag uses `https://www.anakrasis.com` — change it if
+5. In every page the social-preview tag uses `https://www.anakrisis.eu` — change it if
    the domain is different (search for `og:image`).
 
 ## Where to edit
@@ -89,7 +89,7 @@ complete them and have them checked before publishing.
 Because links point to folders (`the-view/`), open the site through a small local server:
 
 ```
-cd anakrasis-site
+cd anakrisis-site
 python3 -m http.server 8000
 ```
 
